@@ -3,8 +3,9 @@ package ru.job4j.condition;
 public class Greeting {
     public static void main(String[] arg) {
         String idea = "I like Java!";
-        idea = idea + "But I am a newbie.";
-        idea += "2023";
+        idea += "But I am a newbie.";
+        int year = 2023;
+        idea += year;
         System.out.println(idea);
 
     }

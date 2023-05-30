@@ -21,8 +21,8 @@ public class Converter {
         System.out.println("140 rubles are " + outDollar + " dollar.");
         boolean passedEuro = expectedToEuro == outEuro;
         boolean passedDollar = expectedToDollar == outDollar;
-        System.out.println("140 rubles are 2.  Test  result : " + passedEuro );
-        System.out.println("140 rubles are 2.  Test  result : " + passedDollar );
+        System.out.println("140 rubles are 2.  Test  result : " + passedEuro);
+        System.out.println("140 rubles are 2.  Test  result : " + passedDollar);
     }
 
 }

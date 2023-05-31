@@ -9,24 +9,21 @@ public class MathCalculator {
                 + multiply(first, second);
     }
 
-    public static double difference(double first, double second) {
-        return ru.job4j.math.MathFunction.difference(first, second);
+    public static double sumDifferenceAndDivision(double first, double second) {
+        return difference(first, second)
+               +  division(first, second);
     }
 
-    public static double division(double first, double second) {
-        return ru.job4j.math.MathFunction.division(first, second);
-    }
-
-        public static double sumDifferenceAndDivision(double first, double second) {
-        return ru.job4j.math.MathFunction.difference(first, second)
-                + ru.job4j.math.MathFunction.division(first, second);
+    public static double sumSumAndMultiplyAndDifferenceAndDivision(double first, double second) {
+        return sum(first, second)
+                + multiply(first, second)
+                + difference(first, second)
+                +  division(first, second);
     }
 
     public static void main(String[] arg) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-        System.out.println("Результат расчета равен: " + difference(369, 9));
-        System.out.println("Результат расчета равен: " + division(369, 9));
-        System.out.println("Результат расчета равен: " + sumDifferenceAndDivision(369, 9));
+        System.out.println("Результат расчета равен: " + sumSumAndMultiplyAndDifferenceAndDivision(10, 20));
     }
 }
 

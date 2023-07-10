@@ -41,4 +41,15 @@ public class MatrixCheck {
         }
         return result;
     }
+
+    public static boolean netmonoHorizontal(char[][] board, int row) {
+        boolean result = false;
+        for (int i = 0; i < board[row].length; i++) {
+            if (board[row][i] == 'X') {
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
 }

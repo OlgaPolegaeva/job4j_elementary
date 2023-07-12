@@ -31,21 +31,10 @@ public class MatrixCheck {
         return rsl;
     }
 
-    public static boolean netmonoVertical(char[][] board, int column) {
-        boolean result = true;
-        for (int i = 0; i < board.length; i++) {
-            if (board[i][column] == 'X') {
-                result = false;
-                break;
-            }
-        }
-        return result;
-    }
-
-    public static boolean netmonoHorizontal(char[][] board, int row) {
+    public static boolean isFalse(char[][] board) {
         boolean result = false;
-        for (int i = 0; i < board[row].length; i++) {
-            if (board[row][i] == 'X') {
+        for (int i = 0; i < board.length; i++) {
+            if ((board[i][i] == 'X') && ((monoHorizontal(board, i) || monoVertical(board, i)))) {
                 result = true;
                 break;
             }
